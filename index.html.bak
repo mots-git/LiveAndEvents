@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <title>MOTS Pages Guide</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+      <link rel="stylesheet" href="styles.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+   </head>
+   <body>
+      <div class="container text-center">
+         <div class="row">
+            <div class="col-md-4">
+               <img class="headerImage" src="assets/Owl_Avatar.png" />
+            </div>
+            <div class="col-md-6">
+               <h2 class="headerText">
+               Live and Events
+               </h2>
+            </div>
+         </div>
+         <div class = "mainBody">
+		 <br>
+		 <div class="textBody">
+			<h4>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</h4>
+			<h4>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</h4>
+			<h4>When an unknown printer took a galley of type and scrambled it to make a type specimen book.</h4>
+		 </div> 
+			<div id="page1">
+				<div class="row">
+				   <div class="col-md-3 col-md-offset-3">
+					  <div class="well" onclick="location.href='#';" style="padding: 0 !important; padding-top: 45px!important;">Lorem Ipsum / Lorem Ipsum</div>
+				   </div>
+				   <div class="col-md-3">
+					  <div class="well" onclick="location.href='#';">Lorem Ipsum</div>
+				   </div>
+				   <div class="col-md-3">
+					  <div class="well" onclick="location.href='#';" style="padding-top: 45px!important;">Lorem Ipsum</div>
+				   </div>
+				</div>
+				<div class="row">
+					<div class="col-md-3 col-md-offset-9">
+					  <div onclick="showPage2Function()"><img class="arrowImage" src="assets/ForwardButton.png" /></div>
+				   </div>
+				</div>
+				<div class="row">
+				   <div class="col-md-3 col-md-offset-3">
+					  <div class="well" onclick="location.href='selections/rebrand-rename.html';" style="padding: 0 !important; padding-top: 45px!important;">Lorem Ipsum / Lorem Ipsum</div>
+				   </div>
+				   <div class="col-md-3">
+					  <div class="well" onclick="location.href='#';">Lorem Ipsum</div>
+				   </div>
+				   <div class="col-md-3">
+					  <div class="well" onclick="location.href='selections/faqs.html';">Lorem Ipsum</div>
+				   </div>
+				</div>
+				<div class="row">
+					<div class="col-md-6 col-md-offset-6">
+					  <p id="pageText">1/2</p>
+				   </div>
+				</div>
+			</div>
+			<div id="page2">
+				<div class="row">
+				   <div class="col-md-3 col-md-offset-3">
+					  <div class="well" onclick="location.href='#';" style="padding-top: 40px!important;">Lorem Ipsum</div>
+				   </div>
+				   <div class="col-md-3">
+					  <div class="well" onclick="location.href='#';">padding: 0 !important;</div>
+				   </div>
+				   <div class="col-md-3">
+					  <div class="well" onclick="location.href='#';" style="padding-top: 45px!important;">Lorem Ipsum</div>
+				   </div>
+				</div>
+				<div class="row">
+					<div class="col-md-3 col-md-offset-1">
+					  <div onclick="showPage1Function()"><img class="arrowImage" src="assets/BackButton.png" /></div>
+				   </div>
+				</div>
+				<div class="row">
+				   <div class="col-md-3 col-md-offset-3">
+					  <div class="well" onclick="location.href='selections/claim-deactivate.html';" style="padding-top: 30px!important;">Lorem Ipsum</div>
+				   </div>
+				   <div class="col-md-3">
+					  <div class="well" onclick="location.href='#';" style="padding-top: 40px!important;">Lorem Ipsum</div>
+				   </div>
+				   <div class="col-md-3">
+					  <div class="well" onclick="location.href='#';" style="padding-top: 45px!important;">Lorem Ipsum</div>
+				   </div>
+				</div>
+				<div class="row">
+					<div class="col-md-6 col-md-offset-6">
+					  <p id="pageText">2/2</p>
+				   </div>
+				</div>
+			</div>
+         </div>
+      </div>
+	  <script>
+		$(document).ready(function() { 
+	
+			document.getElementById("page1").style.display="inline";
+			document.getElementById("page2").style.display="none";
+
+		});
+		function showPage1Function(){
+			document.getElementById("page1").style.display="inline";
+			document.getElementById("page2").style.display="none";
+		}
+		function showPage2Function(){
+			document.getElementById("page1").style.display="none";
+			document.getElementById("page2").style.display="inline";
+		}
+	  </script>
+   </body>
+</html>
